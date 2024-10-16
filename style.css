@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background-color: black;
+    padding: 0 3rem 3 rem 3 rem;
+    margin: 0;
+    color: white;
+}
+
+.secion1 {
+    display: flex;
+    
+    width: 100%;
+}
+
+.container-1 {
+    display: flex;
+    width: 100%;
+}
+
+.first-heading {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.second-heading {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 5rem;
+}
+
+.head {
+    font-size: 1rem;
+}
+
+.para {
+    width: 40%;
+    font-size: 15px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile {
+    display: flex;
+    flex-grow: 1;
+}
+
+.profile img {
+    padding: 0.3 rem;
+    height: 100%;
+    max-height: 545px;
+    width: 100%;
+    max-width: 50rem;
+}
+
+.section2 {
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+   gap: 1.5rem;
+   padding: 0 6rem;
+}
+
+.experience {
+    font-size: 0.8rem;
+    /* padding-bottom: 0.5rem; */
+}
+.skill-1{
+    padding: 1rem;
+    display: grid;
+    row-gap: 0.75rem;
+}
+/* project section started */
+.section3 {
+    padding: 0 6rem;
+    gap: 3rem;
+}
+
+.project-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+}
+
+.project-contact .project {
+    font-size: 5rem;
+}
+
+.project-contact .contact {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.similar {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+
+}
+
+.similar-btn {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.similar-btn button {
+    font-size: 1.5rem;
+
+    border: none;
+    color: white;
+    background-color: transparent;
+
+}
+
+.underlined-text {
+    position: relative;
+    width: fit-content;
+}
+
+.underlined-text::after {
+    content: "";
+    position: absolute;
+    bottom: -.4rem;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: hsl(153, 71%, 59%);
+}
+
+.project-images {
+    width: 100%;
+    display: grid;
+    /* padding: 0 3.5rem; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    /* padding: 0 6rem; */
+
+}
+
+.project-box {
+    width: 100%;
+    display: grid;
+    row-gap: 0.7rem;
+}
+
+.img-box {
+    width: 100%;
+}
+
+.img-box img {
+    width: 100%;
+    aspect-ratio: 1/0.7;
+    object-fit: fill;
+}
+
+.short-heading {
+    display: flex;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .project-images {
+        grid-template-columns: 1fr;
+        place-items: center;
+        row-gap: 2.5rem;
+        padding: 0 2.5rem;
+    }
+
+    .project-box {
+        max-width: 500px;
+        display: grid;
+        justify-content: center;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width : 1024px){
+    .section2{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+/* project section end */
+/* .section-3{
+    padding-top: 5rem;
+}
+.footer-contact{
+    font-size: 3rem;
+}
+.footer-para{
+    width:40%;
+
+}
+.text{
+    margin-bottom: 10rem;
+}
+form{
+    width: 30%;
+    padding-bottom: 4rem;
+}
+.footer-img{
+    display:flex;
+    align-items: center;
+} */
+
+/* section 4 start from here */
+
+.section4 {
+    background-color: hsl(0, 0%, 14%);
+    margin-top: 5rem;
+    
+}
+
+.footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    /* justify-content: space-between;  */
+    /* align-items: flex-start; */
+    padding: 2.5rem 6rem;
+}
+
+.footer-text {
+    /* width: 60%;  */
+}
+
+.footer-contact {
+    font-size: 3rem;
+}
+
+.footer-para {
+    font-size: 1.2rem;
+    max-width: 420px;
+}
+
+.contact-form {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border-bottom: 1px solid white;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-bottom: 1px solid hsl(153, 71%, 59%);
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.send-message {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 4px;
+    justify-self: self-end;
+}
+
+.send-message:hover {
+    color: hsl(153, 71%, 59%);
+}
+.white-line {
+    width: 95%;
+    margin: 0 auto;
+    height: 1.5px;
+    background-color: white;
+
+
+}
+
+/* section 4 ends here */
+.section5{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    padding:5rem;
+   
+}
+.section5 .footer-img{
+    font-size: 1rem;
+}
+#i-1 {
+    margin-right: 0.5rem;
+}
+
+#i-2 {
+    margin-right: 0.5rem;
+}
+
+#i-3 {
+    margin-right: 0.5rem;
+}
+
+#i-4 {
+    margin-right: 0.5rem;
+}
